@@ -18,6 +18,29 @@ function bathhouse_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'bathhouse_enqueue_scripts');
 
+// function bathhouse_body_class($classes) {
+//     // Проверяем, является ли текущая страница главной
+//     if (is_front_page()) {
+//         $classes[] = 'main_class';
+//     }
+//     // Проверяем, является ли текущая страница страницей (post type "page")
+//     elseif (is_page()) {
+//         $classes[] = 'page_class';
+//     }
+//     // Проверяем, является ли текущая страница записью или страницей
+//     elseif (is_singular()) {
+//         $classes[] = 'extra_class';
+//     }
+
+//     return $classes;
+// }
+
+// add_filter('body_class', 'bathhouse_body_class');
+
+
+
+
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
